@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI翻訳データ作成業務マニュアル（DingTalk利用）</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <header>
+        <div class="container">
+            <h1>AI翻訳データ作成業務マニュアル</h1>
+            <div class="subtitle">DingTalk 音声収録ガイド：高品質なデータ作成のために</div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="mobile-nav-toggle" id="mobileNavToggle">
+            <span>目次</span>
+        </div>
+
+        <nav class="side-nav" id="sideNav">
+            <ul>
+                <li><a href="#overview">1. 業務概要</a></li>
+                <li><a href="#precautions">2. 注意事項</a></li>
+                <li><a href="#prep-app">3-1. アプリ設定</a></li>
+                <li><a href="#prep-group">3-2. グループ参加</a></li>
+                <li><a href="#prep-platform">3-3. ログイン</a></li>
+                <li><a href="#execution">4. 録音手順</a></li>
+            </ul>
+        </nav>
+
+        <section id="overview">
+            <h2>1. 業務概要</h2>
+            <p>本業務は、DingTalk（アリババグループ）が提供するAI翻訳の精度向上を目的とした音声データ作成業務です。</p>
+            <div class="alert alert-info">
+                <span>品質要件:</span>
+                <p>「聞き取りやすく正確に読むこと」が求められます。</p>
+                <div style="margin-top: 0.5rem;">
+                    <span>留意事項:</span>
+                    <p>一つひとつのデータがAIの品質に直結するため、丁寧なご対応をお願いいたします。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="precautions">
+            <h2>2. 録音時の注意事項</h2>
+            <p>高品質なデータを確保するため、以下の点に厳守してご対応ください。</p>
+            <ul style="list-style: none; margin-top: 1rem;">
+                <li class="step" style="margin-bottom: 1rem; border-left-color: #F59E0B;">
+                    <strong>環境:</strong> 必ず静かな室内で録音してください（生活音や雑音は不可）。
+                </li>
+                <li class="step" style="margin-bottom: 1rem; border-left-color: #F59E0B;">
+                    <strong>発声:</strong> 声ははっきりと、一定の大きさで録音してください。
+                </li>
+                <li class="step" style="margin-bottom: 1rem; border-left-color: #F59E0B;">
+                    <strong>確認:</strong> 録音後は必ずご自身で音声をご確認ください。
+                </li>
+            </ul>
+            <div class="alert alert-warning">
+                ※音声品質が基準に満たない場合は、継続して業務をご依頼できない場合がございます。
+            </div>
+        </section>
+
+        <section id="preparation">
+            <h2>3. 稼働前準備</h2>
+            <p>問題がなければ、下記の手順に沿ってご準備をお願いいたします。</p>
+
+            <div id="prep-app">
+                <h3>3-1. アプリのダウンロードとアカウント設定</h3>
+                <div class="step-container">
+                    <div class="step">
+                        <div class="step-text"><span class="step-number">1</span> ご利用の環境に応じたDingTalkアプリをダウンロードしてください。
+                        </div>
+                        <ul class="links">
+                            <li><strong>Android:</strong> <a
+                                    href="https://play.google.com/store/apps/details?id=com.alibaba.android.rimet&hl=ja&pli=11"
+                                    target="_blank">Google Playへ</a></li>
+                            <li><strong>iPhone:</strong> <a href="https://apps.apple.com/jp/app/dingtalk/id15029412911"
+                                    target="_blank">App Storeへ</a></li>
+                            <li><strong>PC:</strong> <a href="https://www.dingtalk.com/wow/dingtalk/act/en-download1"
+                                    target="_blank">公式サイトへ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-text"><span class="step-number">2</span> 新規会員登録を行います（メールアドレス厳守）。</div>
+                        <div class="alert alert-warning">
+                            <span>【厳守事項】</span>
+                            <p>LINEやTikTok等の連携、電話番号での登録はしないでください。必ずメールアドレスで登録してください。</p>
+                        </div>
+                        <p>DingTalkアプリを開き、「アカウント登録」をタップします。</p>
+                        <div class="image-wrapper">
+                            <img src="画像0.png" alt="新規登録開始" loading="lazy">
+                            <div class="image-caption">新規会員登録の開始</div>
+                        </div>
+                        <p>メールアドレスを入力し、「次へ」をタップします。</p>
+                        <div class="image-wrapper">
+                            <img src="画像1.jpg" alt="メール登録画面" loading="lazy">
+                            <div class="image-caption">メールアドレスの入力</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-text"><span class="step-number">3</span> アカウント名を設定します。</div>
+                        <p>氏名を【<strong>AB017 + 本名フルネーム</strong>】で設定してください。</p>
+                        <div class="image-wrapper">
+                            <img src="画像2.jpg" alt="氏名設定画面" loading="lazy">
+                            <div class="image-caption">氏名を「AB017＋本名フルネーム」に設定</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-text"><span class="step-number">4</span> メール認証とデバイス設定。</div>
+                        <div class="image-wrapper">
+                            <img src="画像3.jpg" alt="メール認証" loading="lazy">
+                            <div class="image-caption">メール認証の完了</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="画像4.jpg" alt="デバイス選択" loading="lazy">
+                            <div class="image-caption">「A1デバイスを持っていない」を選択</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-text"><span class="step-number">5</span> 最終確認</div>
+                        <p>ホーム右下の「マイ」から、アカウント名が正しく設定されているか確認します。</p>
+                        <div class="image-wrapper">
+                            <img src="画像5.jpg" alt="マイスクリーン" loading="lazy">
+                            <div class="image-caption">マイページ</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="画像6.jpg" alt="設定の確認1" loading="lazy">
+                            <div class="image-caption">設定の確認</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="画像6.5.jpg" alt="設定の確認2" loading="lazy">
+                            <div class="image-caption">設定の確認（詳細）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="prep-group">
+                <h3>3-2. グループおよび公式LINEへの参加</h3>
+                <div class="step-container">
+                    <div class="step">
+                        <div class="step-text"><span class="step-number">1</span> 下記URLよりDingTalkグループへ参加申請してください。</div>
+                        <div class="links">
+                            <a href="https://qr.dingtalk.com/action/joingroup?code=v1,k1,RBy0FZGQOaw+MAzbt1IBq8vpB09SpcTSz2KNJjxUhfKdR7ksupjDEA==&_dt_no_comment=1&origin=111"
+                                target="_blank">グループ招待URLはこちら</a>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="画像7.jpg" alt="グループ参加申請" loading="lazy">
+                            <div class="image-caption">参加画面</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="画像8.jpg" alt="理由記入" loading="lazy">
+                            <div class="image-caption">氏名入力と理由「なし」</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="画像10.jpg" alt="待機画面" loading="lazy">
+                            <div class="image-caption">ネームアップ（氏名連携）まで待機</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-text"><span class="step-number">2</span> 公式LINEにも参加してください。</div>
+                        <p>アカウント名：<strong>AB017＋本名フルネーム</strong> で設定をお願いします。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="prep-platform">
+                <h3>3-3. 録音用プラットフォームへのログイン</h3>
+                <div class="step-container">
+                    <div class="links">
+                        <strong>プラットフォームURL:</strong> <br>
+                        <a href="https://scale.dingtalk.com/user/login/?next=/task-square/1"
+                            target="_blank">https://scale.dingtalk.com/user/login/?next=/task-square/1</a>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-text"><span class="step-number">1</span> 「国際電話番号（日本）」を選択。</div>
+                        <div class="image-wrapper">
+                            <img src="画像11.jpg" alt="ログイン画面1" loading="lazy">
+                            <div class="image-caption">日本を選択しDingTalkでログイン</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="画像12.jpg" alt="ログイン画面2" loading="lazy">
+                            <div class="image-caption">メールアドレスでログインし直す</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-text"><span class="step-number">2</span> メール認証と企業選択。</div>
+                        <div class="image-wrapper">
+                            <img src="画像13.jpg" alt="メール認証" loading="lazy">
+                            <div class="image-caption">メール認証の完了</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="画像14.jpg" alt="企業選択" loading="lazy">
+                            <div class="image-caption">「株式会社グローバルキャスト」を選択</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="画像14.5.jpg" alt="同意" loading="lazy">
+                            <div class="image-caption">同意ボタン</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="execution">
+            <h2>4. 録音タスクの実行手順</h2>
+            <div class="step-container">
+                <div class="step">
+                    <div class="step-text"><span class="step-number">1</span> 収集タスクを作成します。</div>
+                    <div class="image-wrapper">
+                        <img src="画像15.jpg" alt="タスク作成" loading="lazy">
+                        <div class="image-caption">新規作成</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-text"><span class="step-number">2</span> 本人情報の入力。</div>
+                    <p>名前を「<strong>AB017＋本名フルネーム</strong>」と入力し、その他項目を埋めます。</p>
+                    <div class="image-wrapper">
+                        <img src="画像16.jpg" alt="情報入力" loading="lazy">
+                        <div class="image-caption">本人情報の入力</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-text"><span class="step-number">3</span> 読み上げと提出。</div>
+                    <p>表示されたテキストを読み上げ、提出します。</p>
+                    <div class="image-wrapper">
+                        <img src="画像17.jpg" alt="録音画面" loading="lazy">
+                        <div class="image-caption">録音ボタンの画面</div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="画像18.jpg" alt="提出画面" loading="lazy">
+                        <div class="image-caption">提出ボタン（1.5倍速で確認後）</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">
+            &copy; 2024 AI翻訳データ作成推進チーム
+        </div>
+    </main>
+
+    <div class="modal" id="imageModal">
+        <img src="" alt="拡大画像" id="modalImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
